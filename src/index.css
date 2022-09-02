@@ -41,26 +41,6 @@ body {
   background-image: url(/src/assets/texture.png);
 }
 
-.alert {
-  background: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  width: 17rem;
-  height: 17rem;
-  display: block;
-  padding: 1.7rem;
-  z-index: 2;
-  position: fixed;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  border-radius: 3rem;
-  backdrop-filter: blur(15px);
-}
-
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;

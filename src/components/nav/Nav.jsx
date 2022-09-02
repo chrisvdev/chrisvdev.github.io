@@ -4,12 +4,14 @@ import {
   AiOutlineHome,
   AiOutlineUser,
   AiOutlineBook,
+  AiOutlineFolderOpen,
   AiOutlineMessage,
 } from "react-icons/ai";
 import { RiServiceLine } from "react-icons/ri";
 import { useState } from "react";
 
-const Nav = () => {
+const Nav = (props) => {
+  const { about, experience, services, portfolio } = props.data;
   const [active, setActive] = useState("#");
   return (
     <nav>
@@ -22,33 +24,50 @@ const Nav = () => {
       >
         <AiOutlineHome />
       </a>
-      <a
-        href="#about"
-        onClick={() => {
-          setActive("#about");
-        }}
-        className={active === "#about" ? "active" : ""}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => {
-          setActive("#experience");
-        }}
-        className={active === "#experience" ? "active" : ""}
-      >
-        <AiOutlineBook />
-      </a>
-      <a
-        href="#services"
-        onClick={() => {
-          setActive("#services");
-        }}
-        className={active === "#services" ? "active" : ""}
-      >
-        <RiServiceLine />
-      </a>
+      {about && (
+        <a
+          href="#about"
+          onClick={() => {
+            setActive("#about");
+          }}
+          className={active === "#about" ? "active" : ""}
+        >
+          <AiOutlineUser />
+        </a>
+      )}
+      {experience && (
+        <a
+          href="#experience"
+          onClick={() => {
+            setActive("#experience");
+          }}
+          className={active === "#experience" ? "active" : ""}
+        >
+          <AiOutlineBook />
+        </a>
+      )}
+      {services && (
+        <a
+          href="#services"
+          onClick={() => {
+            setActive("#services");
+          }}
+          className={active === "#services" ? "active" : ""}
+        >
+          <RiServiceLine />
+        </a>
+      )}
+      {portfolio && (
+        <a
+          href="#portfolio"
+          onClick={() => {
+            setActive("#portfolio");
+          }}
+          className={active === "#portfolio" ? "active" : ""}
+        >
+          <AiOutlineFolderOpen />
+        </a>
+      )}
       <a
         href="#contact"
         onClick={() => {
