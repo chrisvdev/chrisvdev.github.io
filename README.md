@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Yes this Landing Page is based on Create React App Boilerplate
+
+## The idea behind...
+
+I want to use this as my LandingPage and a demonstration of part o my skills.
+
+However is a good project to have your own dynamic landing page becaus is madded 
+to load a JSON from some place that you want and complete the fields 
+automatically. (I currently working on that...)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
