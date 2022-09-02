@@ -63,7 +63,7 @@ const Nav = (props) => {
           onClick={() => {
             setActive("#portfolio");
           }}
-          className={active === "#portfolio" ? "active" : ""}
+          className={"nav__portfolio-btn"+(active === "#portfolio" ? " active" : "")}
         >
           <AiOutlineFolderOpen />
         </a>

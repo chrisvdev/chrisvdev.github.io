@@ -14,20 +14,28 @@ nav {
   backdrop-filter: blur(15px);
 }
 
-nav a{
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-    background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 nav a.active {
-    background: var(--color-primary);
-    color: var(--color-bg);
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Media Queries (small devices) */
+
+@media (max-width: 600px) {
+  .nav__portfolio-btn {
+    display: none;
+  }
 }
