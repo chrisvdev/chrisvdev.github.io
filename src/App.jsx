@@ -26,7 +26,7 @@ function App() {
       {portfolio && <Portafolio data={portfolio} />}
       {testimonials && <Testimonials data={testimonials} />}
       <Contact />
-      <Footer />
+      <Footer data={content}/>
     </>
   );
 }
