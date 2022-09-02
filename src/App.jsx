@@ -9,7 +9,6 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
-
 import IMG1 from "./assets/demo.png";
 
 function App() {
@@ -77,6 +76,10 @@ function App() {
   ];
   return (
     <>
+      <div className="alert">
+        <p>The site still under construction, that is why you are going to find broken links, Lorems and fake cards.</p>
+        <p>Be patient, i'll finish this soon...</p>
+      </div>
       <Header />
       <Nav />
       <About />

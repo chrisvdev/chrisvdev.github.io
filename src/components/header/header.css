@@ -51,8 +51,8 @@ header {
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
-.avatar{
-  vertical-align:auto;
+.avatar {
+  vertical-align: auto;
   width: 17rem;
   height: 17rem;
   border-radius: 50%;
@@ -72,19 +72,19 @@ header {
 /* Media Queries (medium devices) */
 
 @media (max-width: 1024px) {
-    header{
-        height: 68vh;
-    }
+  header {
+    height: 68vh;
+  }
 }
 
 /* Media Queries (small devices) */
 
 @media (max-width: 600px) {
-    header{
-        height: 100vh;
-    }
-    .header__socials,
-    .scroll__down {
-        display: none;
-    }
+  header {
+    height: fit-content;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
 }
