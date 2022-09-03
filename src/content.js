@@ -11,7 +11,7 @@ const content = {
   about: {
     me: ME,
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex consectetur molestias, mollitia corrupti ut. Excepturi suscipit, expedita nesciunt nihil explicabo quae dolore laudantium quis non nemo ex voluptatem nostrum.",
+      `Graduated more than 10 years ago as a computer technician, I have always had the knowledge to enter software development, but the need pushed me to the branch of support for PCs, networks and servers. Instructed on my own in soft skills, to the point of, recently, having gone through the biggest non-verbal communication masterclass on the world, and as a photographer by hobby, which gave me my knowledge in graphic design, today, after having gone through the Bootcamp of "Soy Henry", I decide to make my career as a Full Stack Developer.`,
   },
   experience: [
     {
