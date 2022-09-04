@@ -6,7 +6,7 @@ And i used as base the video of EGATOR, basically because i was searching ideas 
 
 I want to use this as my LandingPage and a demonstration of part o my skills.
 
-However is a good project to have your own dynamic landing page becaus is madded 
+However is a good project to have your own dynamic landing page because is madded 
 to load a JSON from some place that you want and complete the fields 
 automatically. (I currently working on that...)
 
