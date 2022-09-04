@@ -92,9 +92,7 @@ header {
   }
 
   .avatar {
-    vertical-align: auto;
     width: 26.25vh;
     height: 26.25vh;
-    border-radius: 50%;
   }
 }
