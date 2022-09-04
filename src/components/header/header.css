@@ -73,7 +73,8 @@ header {
 
 @media (max-width: 1024px) {
   header {
-    height: 68vh;
+    padding-top: 5rem;
+    height: 120vh;
   }
 }
 
@@ -81,7 +82,8 @@ header {
 
 @media (max-width: 600px) {
   header {
-    height: fit-content;
+    padding-top: 2rem;
+    height: 120vh;
   }
   .header__socials,
   .scroll__down {

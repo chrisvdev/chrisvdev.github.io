@@ -1,5 +1,5 @@
 import IMG1 from "./assets/demo.png";
-import ME from "./assets/me.png";
+import ME from "./assets/about.jpg";
 
 const content = {
   alert: {
@@ -65,6 +65,10 @@ const content = {
         {
           attribute: "Docker",
           level: "Basic",
+        },
+        {
+          attribute: "IOT",
+          level: "Intermediate",
         },
       ],
     },

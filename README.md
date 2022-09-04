@@ -1,5 +1,7 @@
 # Yes this Landing Page is based on Create React App Boilerplate
 
+And i used as base the video of EGATOR, basically because i was searching ideas to make quickly my landing page and I found his video, I like it, I took it, modified some things and added more functionality. Thanks [EGATOR!](https://www.youtube.com/watch?v=G-Cr00UYokU) 
+
 ## The idea behind...
 
 I want to use this as my LandingPage and a demonstration of part o my skills.
