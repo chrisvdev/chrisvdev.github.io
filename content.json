@@ -6,8 +6,14 @@
       "Second Alert Line"
     ]
   },
+  "header": {
+    "name": "name",
+    "image": "url to main image",
+    "profession": "profession name",
+    "cv": "url to the CV to download"
+  },
   "about": {
-    "me": "https://raw.githubusercontent.com/chrisvill2312/chrisvill2312.github.io/Content/...",
+    "me": "Image url",
     "message": "Presentation message"
   },
   "experience": [
