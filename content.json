@@ -1,9 +1,16 @@
 {
+  "mode": "Posible Values -> merge, replace, skip",
   "alert": {
     "messages": [
       "First Alert Line",
       "Second Alert Line"
     ]
+  },
+  "header": {
+    "name": "name",
+    "image": "url to main image",
+    "profession": "profession name",
+    "cv": "url to the CV to download"
   },
   "about": {
     "me": "Image url",

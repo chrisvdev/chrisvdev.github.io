@@ -1,17 +1,24 @@
 import IMG1 from "./assets/demo.png";
-import ME from "./assets/about.jpg";
+import ME from "./assets/me.png";
+import AVATAR from "./assets/about.jpg";
 import LANDING from "./assets/landing.jpg";
 import ALBT from "./assets/ALBT.png";
 
 const content = {
   alert: {
     messages: [
-      "The site still under construction, that is why you are going to find broken links, Lorems and fake cards.",
+      "The site still under construction, that is why you are going to find broken links and incomplete things.",
       "Be patient, i'll finish this soon...",
     ],
   },
+  header: {
+    name: "Christian Villegas",
+    image: ME,
+    profession: "Fullstack Developer",
+    cv:"#"
+  },
   about: {
-    me: ME,
+    me: AVATAR,
     message: `Graduated more than 10 years ago as a computer technician, I have always had the knowledge to enter software development, but the need pushed me to the branch of support for PCs, networks and servers. Instructed on my own in soft skills, to the point of, recently, having gone through the biggest non-verbal communication masterclass on the world, and as a photographer by hobby, which gave me my knowledge in graphic design, today, after having gone through the Bootcamp of "Soy Henry", I decide to make my career as a Full Stack Developer.`,
   },
   experience: [
@@ -74,41 +81,7 @@ const content = {
       ],
     },
   ],
-  services: [
-    {
-      title: "UI/UX Design",
-      list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      ],
-    },
-    {
-      title: "Web Development",
-      list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      ],
-    },
-    {
-      title: "Content creation",
-      list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      ],
-    },
-  ],
+  services: undefined,
   portfolio: [
     {
       image: LANDING,
@@ -120,12 +93,6 @@ const content = {
       image: ALBT,
       title: "ALBT (Arduino Lithium Battery Tester)",
       github: "https://github.com/chrisvill2312/arduino-li-battery-tester",
-    },
-    {
-      image: IMG1,
-      title: "title",
-      github: "https://github.com/chrisvill2312/",
-      demo: "https://github.com/chrisvill2312/",
     },
   ],
   testimonials: undefined,
