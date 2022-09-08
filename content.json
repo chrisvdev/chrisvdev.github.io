@@ -1,4 +1,5 @@
 {
+  "mode": "merge",
   "alert": {
     "messages": [
       "First Alert Line",
