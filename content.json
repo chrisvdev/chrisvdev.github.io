@@ -1,5 +1,5 @@
 {
-  "mode": "merge",
+  "mode": "skip",
   "alert": {
     "messages": [
       "First Alert Line",
