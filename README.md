@@ -1,14 +1,14 @@
 # Yes this Landing Page is based on Create React App Boilerplate
 
-And i used as base the video of EGATOR, basically because i was searching ideas to make quickly my landing page and I found his video, I like it, I took it, modified some things and added more functionality. Thanks [EGATOR!](https://www.youtube.com/watch?v=G-Cr00UYokU) 
+And I used as base the video of EGATOR, basically because I was searching ideas to make quickly my landing page and I found his video, I like it, I took it, modified some things and added more functionality. Thanks [EGATOR!](https://www.youtube.com/watch?v=G-Cr00UYokU) 
 
 ## The idea behind...
 
-I want to use this as my LandingPage and a demonstration of part o my skills.
+I want to use this as my LandingPage and as a demonstration of part of my skills.
 
 However is a good project to have your own dynamic landing page because is madded to load a JSON from some place that you want and complete the fields automatically.
 
-The way that this works is simple, you have a "content.js" with the default content of the web, If you have a ".env" with the key "REACT_APP_EXTERNAL_CONTENT" the web expect a URL to a JSON file like the "content.json" that i left on the root of this project. You can choose what you want to do whit the external writing on the "mode" property "marge" for marge with the default, "replace" to replace it or "skip" (really you can put something else or nothing but to know what is doing i recommend to put "skip" ) to skip the load of external data.
+The way that this works is simple, you have a "content.js" with the default content of the web, if you have a ".env" with the key "REACT_APP_EXTERNAL_CONTENT" the web expect a URL to a JSON file like the "content.json" that I left on the root of this project. You can choose what you want to do with the external writing on the "mode" property "marge" for marge with the default, "replace" to replace it or "skip" (really you can put something else or nothing but to know what is doing I recommend to put "skip" ) to skip the load of external data.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
