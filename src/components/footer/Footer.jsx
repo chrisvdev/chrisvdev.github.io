@@ -43,10 +43,18 @@ const Footer = (props) => {
         </li>
       </ul>
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/christian-villegas-sanchez-66115097/?locale=en_US">
+        <a
+          href="https://www.linkedin.com/in/chrisvill2312/?locale=en_US"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SiLinkedin />
         </a>
-        <a href="https://github.com/chrisvill2312">
+        <a
+          href="https://github.com/chrisvill2312"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SiGithub />
         </a>
       </div>

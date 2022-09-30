@@ -1,25 +1,20 @@
-import IMG1 from "./assets/demo.png";
 import ME from "./assets/me.png";
 import AVATAR from "./assets/about.jpg";
 import LANDING from "./assets/landing.jpg";
 import ALBT from "./assets/ALBT.png";
+import CV from "./assets/CV-English.pdf";
 
 const content = {
-  alert: {
-    messages: [
-      "The site still under construction, that is why you are going to find broken links and incomplete things.",
-      "Be patient, i'll finish this soon...",
-    ],
-  },
+  alert: undefined ,
   header: {
     name: "Christian Villegas",
     image: ME,
     profession: "Fullstack Developer",
-    cv:"#"
+    cv: CV,
   },
   about: {
     me: AVATAR,
-    message: `Graduated more than 10 years ago as a computer technician, I have always had the knowledge to enter software development, but the need pushed me to the branch of support for PCs, networks and servers. Instructed on my own in soft skills, to the point of, recently, having gone through the biggest non-verbal communication masterclass on the world, and as a photographer by hobby, which gave me my knowledge in graphic design, today, after having gone through the Bootcamp of "Soy Henry", I decide to make my career as a Full Stack Developer.`,
+    message: `Graduated 10 years ago as a computer technician, I always had the knowledge in software development and a goal to make my career about that. I started working in the support on PCs, networks and servers area. Instructed on my own in soft skills, to the point of having gone through the biggest non-verbal communication masterclass on the world. I am a photographer by hobby, which gave me the knowledge in graphic design and use of design apps. After I’ve been gone through the Soy-Henry’s bootcamp, I feel encourage to be a Full Stack Developer.`,
   },
   experience: [
     {
