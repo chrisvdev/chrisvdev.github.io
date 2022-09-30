@@ -2,10 +2,11 @@ import ME from "./assets/me.png";
 import AVATAR from "./assets/about.jpg";
 import LANDING from "./assets/landing.jpg";
 import ALBT from "./assets/ALBT.png";
+import HPI from "./assets/SoyHenryPI.png";
 import CV from "./assets/CV-English.pdf";
 
 const content = {
-  alert: undefined ,
+  alert: undefined,
   header: {
     name: "Christian Villegas",
     image: ME,
@@ -88,6 +89,12 @@ const content = {
       image: ALBT,
       title: "ALBT (Arduino Lithium Battery Tester)",
       github: "https://github.com/chrisvill2312/arduino-li-battery-tester",
+    },
+    {
+      image: HPI,
+      title: "The Game Catalog (SoyHenry's Bootcamp Individual Project)",
+      github: "https://github.com/chrisvill2312/PI-Videogames",
+      demo: "http://6evi.duckdns.org/",
     },
   ],
   testimonials: undefined,
