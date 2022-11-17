@@ -3,6 +3,7 @@ import AVATAR from "./assets/about.jpg";
 import LANDING from "./assets/landing.jpg";
 import ALBT from "./assets/ALBT.png";
 import HPI from "./assets/SoyHenryPI.png";
+import HEC from "./assets/ec.png";
 import CV from "./assets/CV-English.pdf";
 
 const content = {
@@ -27,10 +28,18 @@ const content = {
         },
         {
           attribute: "CSS",
-          level: "Intermediate",
+          level: "Experienced",
         },
         {
           attribute: "JavaScript",
+          level: "Experienced",
+        },
+        {
+          attribute: "React",
+          level: "Experienced",
+        },
+        {
+          attribute: "Redux",
           level: "Experienced",
         },
         {
@@ -40,10 +49,6 @@ const content = {
         {
           attribute: "Tailwind",
           level: "Intermediate",
-        },
-        {
-          attribute: "React",
-          level: "Experienced",
         },
       ],
     },
@@ -63,16 +68,65 @@ const content = {
           level: "Intermediate",
         },
         {
+          attribute: "SQL",
+          level: "Intermediate",
+        },
+        {
           attribute: "Postgres",
           level: "Intermediate",
         },
+        {
+          attribute: "MongoDB",
+          level: "Basic",
+        },
+      ],
+    },
+    {
+      title: "DevOps and Others",
+      attributes: [
         {
           attribute: "Docker",
           level: "Basic",
         },
         {
-          attribute: "IOT",
+          attribute: "GNU/Linux",
           level: "Intermediate",
+        },
+        {
+          attribute: "Bash",
+          level: "Intermediate",
+        },
+        {
+          attribute: "Arduino",
+          level: "Experienced",
+        },
+        {
+          attribute: "Raspberry",
+          level: "Experienced",
+        },
+        {
+          attribute: "Git",
+          level: "Intermediate",
+        },
+        {
+          attribute: "Scrum/Agile",
+          level: "Experienced",
+        },
+        {
+          attribute: "C",
+          level: "Intermediate",
+        },
+        {
+          attribute: "C++",
+          level: "Intermediate",
+        },
+        {
+          attribute: "Java",
+          level: "Intermediate",
+        },
+        {
+          attribute: "Python",
+          level: "Basic",
         },
       ],
     },
@@ -95,6 +149,12 @@ const content = {
       title: "The Game Catalog (SoyHenry's Bootcamp Individual Project)",
       github: "https://github.com/chrisvill2312/PI-Videogames",
       demo: "http://6evi.duckdns.org/",
+    },
+    {
+      image: HEC,
+      title: "Technomerch E-Commerce (SoyHenry's Bootcamp Final Project applying SCRUM methodology)",
+      github: "https://github.com/PT07G05-Henry",
+      demo: "https://6evi.duckdns.org:1337/",
     },
   ],
   testimonials: undefined,

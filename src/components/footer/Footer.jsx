@@ -59,7 +59,6 @@ const Footer = (props) => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Christian Villegas. All rights reserved.</small>
       </div>
     </footer>
   );
