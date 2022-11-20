@@ -16,6 +16,7 @@ const Nav = (props) => {
   return (
     <nav>
       <a
+        title="Home"
         href="#"
         onClick={() => {
           setActive("#");
@@ -26,6 +27,7 @@ const Nav = (props) => {
       </a>
       {about && (
         <a
+          title="About"
           href="#about"
           onClick={() => {
             setActive("#about");
@@ -37,6 +39,7 @@ const Nav = (props) => {
       )}
       {experience && (
         <a
+          title="Experience"
           href="#experience"
           onClick={() => {
             setActive("#experience");
@@ -48,6 +51,7 @@ const Nav = (props) => {
       )}
       {services && (
         <a
+          title="Services"
           href="#services"
           onClick={() => {
             setActive("#services");
@@ -59,6 +63,7 @@ const Nav = (props) => {
       )}
       {portfolio && (
         <a
+          title="Portfolio"
           href="#portfolio"
           onClick={() => {
             setActive("#portfolio");
@@ -75,6 +80,7 @@ const Nav = (props) => {
         </a>
       )}
       <a
+        title="Contact"
         href="#contact"
         onClick={() => {
           setActive("#contact");

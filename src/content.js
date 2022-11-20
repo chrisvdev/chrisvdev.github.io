@@ -16,7 +16,11 @@ const content = {
   },
   about: {
     me: AVATAR,
-    message: `Graduated 10 years ago as a computer technician, I always had the knowledge in software development and a goal to make my career about that. I started working in the support on PCs, networks and servers area. Instructed on my own in soft skills, to the point of having gone through the biggest non-verbal communication masterclass on the world. I am a photographer by hobby, which gave me the knowledge in graphic design and use of design apps. After I’ve been gone through the Soy-Henry’s bootcamp, I feel encourage to be a Full Stack Developer.`,
+    message: `Hello! 👋🏻 My name is Christian and I have the confidence to tell you that if you entered here looking for a Full Stack Developer that provides solutions, you will find it in me 😊. Why?
+    Now as a Full Stack Developer thanks to Henry, I am up to date with the technologies that the market demands.
+    I am attentive to the technologies that are to come, I strongly rely on the new ones, on my background and experience as a computer technician, which gave me the knowledge to understand what programming is all about and what is required to perform DevOps 💪🏻. As a Photographer, knowing about composition, visual language and colorimetry, makes it even easier for me to develop a better FrontEnd and UX 🎨.
+    Is there already a team in place or are you building one? Apart from knowing how to implement Scrum and what agile methodologies are all about, I have knowledge and experience in communication that will accelerate my integration to the team🙏🏻.
+    Don't delay and contact me. 😉`,
   },
   experience: [
     {
@@ -131,18 +135,46 @@ const content = {
       ],
     },
   ],
-  services: undefined,
-  portfolio: [
+  services: [
     {
-      image: LANDING,
-      title: "This web site!",
-      github:
-        "https://github.com/chrisvill2312/chrisvill2312.github.io/tree/main",
+      "title": "FrontEnd Development",
+      "list": [
+        "Front End Architecture & Design",
+        "UI / UX Development",
+        "Custom JavaScript Based Solutions"
+      ]
     },
     {
-      image: ALBT,
-      title: "ALBT (Arduino Lithium Battery Tester)",
-      github: "https://github.com/chrisvill2312/arduino-li-battery-tester",
+      "title": "BackEnd Development",
+      "list": [
+        "API Integration",
+        "User Management",
+        "Messaging Services",
+        "Data Synchronization",
+        "Data Storage",
+        "Security",
+        "Content Management System",
+        "And more..."
+      ]
+    },
+    {
+      "title": "DevOps",
+      "list": [
+        "Business Planing",
+        "Development",
+        "Testing",
+        "Cloud construction and Deployment",
+        "Monitoring",
+        "Automation and Optimization",
+      ]
+    }
+  ],
+  portfolio: [
+    {
+      image: HEC,
+      title: "Technomerch E-Commerce (SoyHenry's Bootcamp Final Project - Teamwork applying SCRUM methodology)",
+      github: "https://github.com/PT07G05-Henry",
+      demo: "https://6evi.duckdns.org:1337/",
     },
     {
       image: HPI,
@@ -151,10 +183,15 @@ const content = {
       demo: "http://6evi.duckdns.org/",
     },
     {
-      image: HEC,
-      title: "Technomerch E-Commerce (SoyHenry's Bootcamp Final Project applying SCRUM methodology)",
-      github: "https://github.com/PT07G05-Henry",
-      demo: "https://6evi.duckdns.org:1337/",
+      image: ALBT,
+      title: "ALBT (Arduino Lithium Battery Tester)",
+      github: "https://github.com/chrisvill2312/arduino-li-battery-tester",
+    },
+    {
+      image: LANDING,
+      title: "This web site!",
+      github:
+        "https://github.com/chrisvill2312/chrisvill2312.github.io/tree/main",
     },
   ],
   testimonials: undefined,
