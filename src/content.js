@@ -180,7 +180,7 @@ const content = {
       image: HPI,
       title: "The Game Catalog (SoyHenry's Bootcamp Individual Project)",
       github: "https://github.com/chrisvill2312/PI-Videogames",
-      demo: "http://6evi.duckdns.org/",
+      demo: "http://6evi.duckdns.org:1336/",
     },
     {
       image: ALBT,
