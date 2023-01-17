@@ -5,6 +5,7 @@ import ALBT from "./assets/ALBT.png";
 import HPI from "./assets/SoyHenryPI.png";
 import HEC from "./assets/ec.png";
 import CV from "./assets/CV-English.pdf";
+import CF from "./assets/cloudflare.png";
 
 const content = {
   alert: undefined,
@@ -170,17 +171,24 @@ const content = {
     }
   ],
   portfolio: [
+
+    {
+      image: CF,
+      title: "A Cloudflare DNS, Subdomain and SSL management service",
+      paragraph: "if you entered from christianvillegas.com you are currently using it",
+      github: "https://github.com/chrisvill2312/CloudFlare-SSL-Subdomain-service",
+    },
     {
       image: HEC,
       title: "Technomerch E-Commerce (SoyHenry's Bootcamp Final Project - Teamwork applying SCRUM methodology)",
       github: "https://github.com/PT07G05-Henry",
-      demo: "https://6evi.duckdns.org:1337/",
+      demo: "https://tecnomerch.christianvillegas.com/",
     },
     {
       image: HPI,
       title: "The Game Catalog (SoyHenry's Bootcamp Individual Project)",
       github: "https://github.com/chrisvill2312/PI-Videogames",
-      demo: "http://6evi.duckdns.org:1336/",
+      demo: "https://gamecatalog.christianvillegas.com/",
     },
     {
       image: ALBT,

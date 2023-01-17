@@ -32,6 +32,10 @@
     margin-bottom: 1rem;
 }
 
+.portfolio__item > p {
+    margin-bottom: 1.5rem;
+}
+
 /* Media Queries (medium devices) */
 
 @media (max-width: 1024px) {
