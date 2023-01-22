@@ -1,0 +1,17 @@
+---
+import Title from "./Title.astro";
+import content from "../content";
+---
+
+<div id="header" class="h-screen w-full overflow-hidden snap-start">
+  <div
+    class="flex w-screen h-screen place-items-center -z-10 b opacity-25 bg-cover bg-fixed"
+    style={`background-image: url(${content.header.image});`}
+  >
+  </div>
+  <header
+    class="grid grid-cols-1 w-screen h-screen place-items-center relative -top-full bg-transparent z-0 bg-gradient-to-b from-zinc-900 via-transparent to-zinc-900"
+  >
+    <Title />
+  </header>
+</div>

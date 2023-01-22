@@ -1,21 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Title from "../components/Title.astro";
-import content from "../content";
+import Header from "../components/Header.astro";
+import AboutMe from "../components/AboutMe.astro";
 ---
 
 <MainLayout>
-  <div class="h-screen w-full overflow-hidden">
-    <div
-      class="flex w-screen h-screen place-items-center -z-10 b opacity-25 bg-cover bg-fixed"
-      style={`background-image: url(${content.header.image});`}
-    />
-    <header
-      class="grid grid-cols-1 w-screen h-screen place-items-center relative -top-full bg-transparent z-0 bg-gradient-to-b from-zinc-900 via-transparent to-zinc-900"
-    >
-      <Title />
-    </header>
-    
-  </div>
-  <section class="h-screen w-full overflow-hidden"></section>
+  <Header/>
+  <AboutMe/>
 </MainLayout>

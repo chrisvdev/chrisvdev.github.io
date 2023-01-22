@@ -1,5 +1,5 @@
 const HB = "https://res.cloudinary.com/dgg07ocbn/image/upload/v1674362500/Landing/_DSC3579_web_mwmtrh.jpg";
-const AVATAR = "https://res.cloudinary.com/dgg07ocbn/image/upload/v1674355663/Landing/about_orqxdl.jpg";
+const AVATAR = "https://res.cloudinary.com/dgg07ocbn/image/upload/v1674355663/Landing/me_mjun2q.png";
 const LANDING = "https://res.cloudinary.com/dgg07ocbn/image/upload/v1674355663/Landing/landing_imicwm.jpg";
 const ALBT = "https://res.cloudinary.com/dgg07ocbn/image/upload/v1674355663/Landing/ALBT_dpggao.png";
 const HPI = "https://res.cloudinary.com/dgg07ocbn/image/upload/v1674355666/Landing/SoyHenryPI_mkcmav.png";
