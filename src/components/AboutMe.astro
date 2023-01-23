@@ -1,7 +1,16 @@
 ---
 import Container from "./Container.astro";
+import content from "../content";
+const size = 56
+const cl = `flex w-${size} h-${size} overflow-hidden m-10`
 ---
 
-<Container id="about">
-    <h1>about me</h1>
+<Container id="about" className="grid grid-cols-1 place-items-center">
+    <article class="flex flex-col w-fit">
+        <h3 class="text-center font-semibold text-2xl">About Me</h3>
+        <div class="grid grid-cols-2 place-items-center">
+            <div class="flex xl:w-64 xl:h-64 2xl:w-96 2xl:h-96 overflow-hidden m-10 rounded"><img class="object-cover" src={content.about.me} alt=""></div>
+            <div class="m-10 h-96"><p class="text-lg">{content.about.message}</p></div>
+        </div>
+    </article>
 </Container>
