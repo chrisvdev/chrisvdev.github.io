@@ -1,0 +1,7 @@
+---
+const { id } = Astro.props;
+---
+
+<a href={id} class="flex px-2 py-1 my-2 mx-1 w-fit rounded bg-gradient-to-b from-amber-600 to-amber-900 hover:from-amber-500 hover:to-amber-800 active:from-amber-800 active:to-amber-500 active:scale-95 transition-all text-lg">
+  <slot/>
+</a>

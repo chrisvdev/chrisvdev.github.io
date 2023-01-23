@@ -2,9 +2,17 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import AboutMe from "../components/AboutMe.astro";
+import Nav from "../components/Nav.astro";
+import NavigateButton from "../components/NavigateButton.astro";
 ---
 
 <MainLayout>
+  <Nav>
+    <NavigateButton>Home</NavigateButton>
+    <NavigateButton>About Me</NavigateButton>
+    <NavigateButton>Portfolio</NavigateButton>
+    <NavigateButton>Services</NavigateButton>
+  </Nav>
   <Header/>
   <AboutMe/>
 </MainLayout>

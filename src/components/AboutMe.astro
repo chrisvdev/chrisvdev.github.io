@@ -1,16 +1,17 @@
 ---
 import Container from "./Container.astro";
-import content from "../content";
-const size = 56
-const cl = `flex w-${size} h-${size} overflow-hidden m-10`
+import content from "../content"
+import NavigateButton from "./NavigateButton.astro";
 ---
 
 <Container id="about" className="grid grid-cols-1 place-items-center">
-    <article class="flex flex-col w-fit">
-        <h3 class="text-center font-semibold text-2xl">About Me</h3>
-        <div class="grid grid-cols-2 place-items-center">
-            <div class="flex xl:w-64 xl:h-64 2xl:w-96 2xl:h-96 overflow-hidden m-10 rounded"><img class="object-cover" src={content.about.me} alt=""></div>
-            <div class="m-10 h-96"><p class="text-lg">{content.about.message}</p></div>
+    <article class="flex flex-col h-full w-fit">
+        <div class="h-full grid sm:grid-cols-1 xl:grid-cols-2 place-items-center">
+            <div class="flex sm:w-64 sm:h-64 md:w-96 md:h-96 overflow-hidden m-10 rounded shadow-md hover:shadow-lg shadow-amber-900 hover:shadow-zinc-500 rotate-6 hover:rotate-0 transition-all"><img class="object-cover" src={content.about.me} alt=""></div>
+            <div class="m-10 h-full flex flex-col justify-center">
+                <p class="sm:text-lg 2xl:text-xl mb-5" set:html={content.about.message}/>
+                <NavigateButton id="#contact">Go to contact</NavigateButton>
+            </div>
         </div>
     </article>
 </Container>
