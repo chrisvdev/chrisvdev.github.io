@@ -8,6 +8,9 @@ module.exports = {
 			fontFamily: {
 				'futura-pt': ['"futura-pt"', 'sans-serif'],
 			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			}
 		},
 		screens: {
 			'sm': '300px',
