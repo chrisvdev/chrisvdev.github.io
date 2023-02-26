@@ -4,17 +4,21 @@ const { name, profession, cv } = content.header;
 const SVGSize = 24;
 ---
 
-<div class="flex flex-col w-max h-max  ">
+<div class="flex flex-col w-max h-max">
   <h1
     class="text-center text-6xl sm:text-4xl md:text-6xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-amber-100 to-amber-500 py-2"
   >
     {name}
   </h1>
-  <h2
-    class="text-center sm:text-base md:text-xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-amber-400 to-amber-700 sm:mb-2 md:mb-3 "
-  >
-    {profession}
-  </h2>
+  <div class="flex flex-row justify-center items-center sm:mb-2 md:mb-3">
+    <div class="border border-amber-600 h-[2px] w-20 mx-2 barAnimation"></div>
+    <h2
+      class="text-center sm:text-base md:text-xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-amber-400 to-amber-700"
+    >
+      {profession}
+    </h2>
+    <div class="border border-amber-600 h-[2px] w-20 mx-2 barAnimation"></div>
+  </div>
   <div class="flex w-full place-content-center">
     <a
       href="https://www.linkedin.com/in/chrisvill2312/?locale=en_US"
@@ -70,3 +74,34 @@ const SVGSize = 24;
     </a>
   </div>
 </div>
+
+<style>
+  .barAnimation {
+    animation-name: expand;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes expand {
+    0% {
+      border-color: #0000;
+      width: 0;
+      box-shadow: none;
+    }
+    35% {
+      border-color: #0000;
+      width: 0;
+      box-shadow: none;
+    }
+    50% {
+      border-color: rgb(253, 230, 138);
+      width: 0;
+      box-shadow: 0 0 0.25rem 0.25rem rgba(253, 230, 138, 0.75);
+    }
+    100% {
+      border-color: rgb(217, 119, 6);
+      width: 5rem;
+      box-shadow: none;
+    }
+  }
+</style>
