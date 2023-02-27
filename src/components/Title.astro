@@ -32,7 +32,7 @@ const SVGSize = 24;
         version="1.1"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-zinc-400 stroke-zinc-500 hover:fill-sky-600 hover:stroke-sky-600 hover:scale-110 active:scale-95 transition-all"
+        class="fill-zinc-400 stroke-zinc-500 hover:fill-sky-600 hover:stroke-sky-600 hover:scale-110 active:scale-95 transition-all iconGlow"
       >
         <title>linkedin</title>
         <path
@@ -52,7 +52,7 @@ const SVGSize = 24;
         version="1.1"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-zinc-400 stroke-zinc-500 hover:fill-white hover:stroke-white hover:scale-110 active:scale-95 transition-all"
+        class="fill-zinc-400 stroke-zinc-500 hover:fill-white hover:stroke-white hover:scale-110 active:scale-95 transition-all iconGlow"
       >
         <title>github</title>
         <path
@@ -67,10 +67,28 @@ const SVGSize = 24;
       class="flex place-content-center place-items-center ml-8"
     >
       <p
-        class="font-medium text-2xl text-zinc-400 hover:text-zinc-300 hover:scale-110 active:scale-95 transition-all"
+        class="font-medium text-2xl text-zinc-400 hover:text-zinc-300 hover:scale-110 active:scale-95 transition-all iconGlow" title="My CV"
       >
         CV
       </p>
+    </a>
+    <a
+      href="https://github.com/chrisvill2312"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex place-content-center place-items-center ml-8"
+    >
+      <svg
+        width={SVGSize}
+        height={SVGSize}
+        version="1.1"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+        class="fill-zinc-400 stroke-zinc-500 hover:fill-violet-700 hover:stroke-violet-700 hover:scale-110 active:scale-95 transition-all iconGlow"
+      >
+        <title>Twitch</title>
+        <path xmlns="http://www.w3.org/2000/svg" d="M26.711 14.929l-4.284 4.284h-4.285l-3.749 3.749v-3.749h-4.82v-16.067h17.138zM8.502 1.004l-5.356 5.356v19.279h6.427v5.356l5.356-5.356h4.284l9.641-9.64v-14.996zM21.356 6.895h2.142v6.427h-2.142zM15.464 6.895h2.143v6.427h-2.144z"/>
+      </svg>
     </a>
   </div>
 </div>
@@ -96,12 +114,35 @@ const SVGSize = 24;
     50% {
       border-color: rgb(253, 230, 138);
       width: 0;
-      box-shadow: 0 0 0.25rem 0.25rem rgba(253, 230, 138, 0.75);
+      box-shadow: 0 0 0.25rem 0.15rem rgba(253, 230, 138, 0.75);
     }
     100% {
       border-color: rgb(217, 119, 6);
       width: 5rem;
       box-shadow: none;
+    }
+  }
+
+  .iconGlow {
+    animation-name: glow;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes glow {
+    0% {
+      filter: none;
+    }
+    25% {
+      filter: none;
+    }
+    50% {
+      filter: drop-shadow(0 0 .25rem rgba(212 ,212,216,.75));
+      fill: #fff;
+    }
+    100% {
+      filter: none;
     }
   }
 </style>
