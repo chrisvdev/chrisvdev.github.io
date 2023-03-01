@@ -1,7 +1,10 @@
 ---
-const { id } = Astro.props;
+const { id, className = "" } = Astro.props;
 ---
 
-<a href={id} class="flex px-2 py-1 my-2 mx-1 w-fit rounded bg-gradient-to-b from-amber-600 to-amber-900 hover:from-amber-500 hover:to-amber-800 active:from-amber-800 active:to-amber-500 active:scale-95 transition-all text-lg">
-  <slot/>
+<a
+  href={id}
+  class={`border h-8 w-fit border-transparent hover:border-b-amber-400 hover:border-t-transparent hover:text-slate-50 px-2 transition-all text-lg ${className}`}
+>
+  <slot />
 </a>

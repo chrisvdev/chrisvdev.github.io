@@ -3,10 +3,9 @@ import Title from "./Title.astro";
 import content from "../content";
 ---
 
-<div id="header" class="h-screen w-full overflow-hidden snap-start">
+<div id="header" class="h-screen w-full overflow-hidden section">
   <div
-    class="flex w-screen h-screen place-items-center -z-10 b opacity-25 bg-cover bg-fixed"
-    style={`background-image: url(${content.header.image});`}
+    class="flex w-[100svw] h-[100svh] place-items-center -z-10 b opacity-25 bg-cover bg-fixed headerBg"
   >
   </div>
   <header
@@ -15,3 +14,34 @@ import content from "../content";
     <Title />
   </header>
 </div>
+
+<style>
+  .section{
+    scroll-snap-align: start;
+  }
+  .headerBg {
+    background-image: url("https://res.cloudinary.com/dgg07ocbn/image/upload/w_1920,h_1080,c_scale/v1674362500/Landing/_DSC3579_web_mwmtrh.jpg");
+    background-size: cover;
+    animation: headerBg;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes headerBg{
+    0%{
+      opacity: 0;
+    }
+    92%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 25%;
+    }
+  }
+  @media (max-width: 700px) {
+    .headerBg {
+      background-image: url("https://res.cloudinary.com/dgg07ocbn/image/upload/w_700,h_700,c_fill/v1674362500/Landing/_DSC3579_web_mwmtrh.jpg");
+      background-size:auto;
+    }
+  }
+</style>

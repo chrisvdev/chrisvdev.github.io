@@ -11,13 +11,19 @@ const SVGSize = 24;
     {name}
   </h1>
   <div class="flex flex-row justify-center items-center sm:mb-2 md:mb-3">
-    <div class="border border-amber-600 h-[2px] w-20 mx-2 barAnimation"></div>
+    <div
+      class="border border-amber-600 h-[2px] w-[var(--barSize)] mx-2 barAnimation"
+    >
+    </div>
     <h2
       class="text-center sm:text-base md:text-xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-amber-400 to-amber-700"
     >
       {profession}
     </h2>
-    <div class="border border-amber-600 h-[2px] w-20 mx-2 barAnimation"></div>
+    <div
+      class="border border-amber-600 h-[2px] w-[var(--barSize)] mx-2 barAnimation"
+    >
+    </div>
   </div>
   <div class="flex w-full place-content-center">
     <a
@@ -74,7 +80,7 @@ const SVGSize = 24;
       </p>
     </a>
     <a
-      href="https://github.com/chrisvill2312"
+      href="https://www.twitch.tv/chrisvdev"
       target="_blank"
       rel="noopener noreferrer"
       class="flex place-content-center place-items-center ml-8"
@@ -98,6 +104,16 @@ const SVGSize = 24;
 </div>
 
 <style>
+  * {
+    --barSize: 5rem;
+  }
+
+  @media (max-width: 640px) {
+    * {
+      --barSize: 1.75rem;
+    }
+  }
+
   .barAnimation {
     animation-name: expand;
     animation-duration: 1.5s;
@@ -122,7 +138,7 @@ const SVGSize = 24;
     }
     100% {
       border-color: rgb(217, 119, 6);
-      width: 5rem;
+      width: var(--barSize);
       box-shadow: none;
     }
   }

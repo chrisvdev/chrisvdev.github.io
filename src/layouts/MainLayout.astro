@@ -1,3 +1,6 @@
+---
+import Nav from "../components/nav/Nav.astro";
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +10,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/yij4raz.css">
     <title>Christian's web site...</title>
   </head>
-
   <body class="bg-zinc-900 text-zinc-300 font-futura-pt subpixel-antialiased scroll-smooth snap-y snap-mandatory">
+    <Nav/>
     <slot/>
   </body>
 </html>
+
+<style>
+  *{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+</style>

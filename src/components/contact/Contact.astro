@@ -1,0 +1,8 @@
+---
+import Contact from "./Contact.jsx"; // This is an reutilization of old code from de V1 Landing Page.
+import Container from "../Container.astro";
+---
+
+<Container id="contact" className="grid grid-cols-1 place-items-center">
+  <Contact client:load />
+</Container>
