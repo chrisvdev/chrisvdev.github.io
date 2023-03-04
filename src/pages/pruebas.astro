@@ -1,26 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Orbe from "../components/Orbe.astro";
+import Pruebas from "../components/Pruebas.jsx";
 ---
 
 <MainLayout>
-  <div class="grid place-content-center h-screen blur">
-    <div
-      class="flex border m-10 w-[50vw] h-[50vw] border-amber-50 rounded-full shadow-lg shadow-amber-300 bg-gradient-radial from-[#D9770650] via-[#D9770678] to-[#fcd34da0] opacity-100 animate-pulse-slow"
-      style="--tw-shadow-colored: 0 0 5vw -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);"
-    >
-    </div>
-    <div
-      class="flex border m-10 w-[50vw] h-[50vw] border-amber-50 rounded-full shadow-lg shadow-amber-300 bg-gradient-radial from-[#D9770650] via-[#D9770678] to-[#fcd34da0] opacity-100 animate-pulse-slow"
-      style="--tw-shadow-colored: 0 0 5vw -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);"
-    >
-    </div>
-    <Orbe/>
-    <Orbe/>
-    <Orbe/>
-    <Orbe/>
-    <Orbe/>
-    <Orbe/>
+  <div class="grid place-content-center h-screen">
+   <Pruebas client:load/>
   </div>
 </MainLayout>
 

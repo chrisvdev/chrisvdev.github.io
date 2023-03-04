@@ -1,9 +1,8 @@
 import { useState } from "react";
-import repo from "../repos"
 import axios from "axios";
 
 function useGithubRepos(userName = "chrisvill2312") {
-    const [repos, setRepos] = useState([])
+    const [projects, setProjects] = useState([])
     const processing = repo.map((e) => {
         const clon = structuredClone(e);
         return axios.get(clon.languages_url)
@@ -12,12 +11,14 @@ function useGithubRepos(userName = "chrisvill2312") {
                 description: clon.description,
                 updated: clon.updated_at,
                 tags: clon.topics,
+                deploy: clon.homepage
             }))
     })
     try {
         Promise.all(processing)
-            .then((repos) => (setRepos(repos)))
+            .then((repos) => (setProjects(filterProjects(repos))))
     } catch (error) {
-        setRepos[{error:"error al cargar"}]
+        setProjects[{ error: "error al cargar" }]
     }
+    return projects;
 }

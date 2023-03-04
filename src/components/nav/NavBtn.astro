@@ -2,24 +2,27 @@
 const { to } = Astro.props;
 ---
 
-<a href={to} class="flex border h-6 border-transparent hover:border-b-amber-400 hover:border-t-transparent hover:text-slate-50 px-2 transition-all navBtn">
+<a
+  href={to}
+  class="flex border h-6 border-transparent hover:border-b-amber-400 hover:border-t-transparent hover:text-slate-50 px-2 transition-all navBtn"
+>
   <slot />
 </a>
 
 <style>
-    .navBtn{
-        animation-name: navBtn;
-        animation-timing-function: ease-in-out;
-        animation-duration: 3.5s;
-        animation-iteration-count: 1;
-    }
+  .navBtn {
+    animation-name: navBtn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+  }
 
-    @keyframes navBtn {
-        0%{
-            opacity: 0;
-        }
-        93%{
-            opacity: 0;
-        }
+  @keyframes navBtn {
+    0% {
+      opacity: 0;
     }
+    93% {
+      opacity: 0;
+    }
+  }
 </style>
