@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import LinkButton from "./LinkButton.jsx";
-//import repo from "../repos.js";
 
 export default function Pruebas() {
   const [projects, setProjects] = useState([]);
@@ -14,15 +13,20 @@ export default function Pruebas() {
         .then((response) => {
           const processing = response.data.map((e) => {
             const clon = structuredClone(e);
-            return axios.get(clon.languages_url).then((response) => ({
-              langs: response.data,
-              name: clon.name,
-              description: clon.description,
-              updated: clon.updated_at,
-              tags: clon.topics,
-              deploy: clon.homepage,
-              github: clon.html_url,
-            }));
+            return axios.get(clon.languages_url).then((response) => {
+              const previewTag = clon.topics.filter((tag) => tag.split(":")[0] === "preview")
+              const preview = previewTag.length>0 ? previewTag[0].split(":")[0] : "";
+              return {
+                langs: response.data,
+                name: clon.name,
+                description: clon.description,
+                updated: clon.updated_at,
+                tags: clon.topics,
+                deploy: clon.homepage,
+                github: clon.html_url,
+                preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/v1/Landing/Projects/${}`,
+              };
+            });
           });
           try {
             Promise.all(processing).then((repos) =>
@@ -49,9 +53,7 @@ export default function Pruebas() {
           <p className="mb-2">{description}</p>
           <div className="w-full flex justify-around">
             <LinkButton href={github}>GitHub</LinkButton>
-            {deploy !== "" && (
-              <LinkButton href={deploy}>Visit</LinkButton>
-            )}
+            {deploy !== "" && <LinkButton href={deploy}>Visit</LinkButton>}
           </div>
         </article>
       ))}
