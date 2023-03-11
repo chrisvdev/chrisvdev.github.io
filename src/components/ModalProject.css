@@ -1,0 +1,17 @@
+.details > h1{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.details > h2{
+    text-align: center;
+    font-size: 1.20rem;
+    font-weight: 600;
+}
+
+.details > h3{
+    text-align: center;
+    font-size: 1.10rem;
+    font-weight: 500;
+}
