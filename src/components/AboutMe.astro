@@ -17,9 +17,12 @@ import NavigateButton from "./NavigateButton.astro";
           class="sm:text-lg 2xl:text-xl mb-5"
           set:html={content.about.message}
         />
-        <NavigateButton id="#contact" className="mx-auto">
-          Contact me
-        </NavigateButton>
+        <p class="sm:text-lg 2xl:text-xl mb-5">
+          See the projects that I've done and the technologies that I've used on my
+          <NavigateButton id="/portfolio">Portfolio</NavigateButton>
+          and
+          <NavigateButton id="#contact">Contact me</NavigateButton>
+        </p>
       </div>
     </div>
   </article>

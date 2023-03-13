@@ -17,12 +17,10 @@ const content = {
   },
   about: {
     me: AVATAR,
-    message: `Hello!👋🏻 My name is Christian and I have the confidence to tell you that if you entered here looking for a Full Stack Developer that provides solutions, you will find it in me 😊. Why? <br>
-    As a Full Stack Developer I am up to date with the technologies and good practices that the market demands.<br>
-    I am attentive to the technologies that are to come, I strongly rely on the new ones, on my background and experience as a computer technician, which gave me the knowledge to understand what programming is all about and what is required to perform DevOps 💪🏻.<br>
-    As a Photographer, knowing about composition, visual language and colorimetry, makes it even easier for me to develop a better FrontEnd and UX 🎨.<br>
-    Is there already a team in place or are you building one? Apart from knowing how to implement Scrum and what agile methodologies are all about, I have knowledge and experience in communication that will accelerate my integration to the team🙏🏻.<br>
-    Don't delay and contact me. 😉`,
+    message: `Hello, everyone! My name is Christian, and I am a Full Stack Developer. If you are looking for someone who can provide effective solutions, then you have come to the right place! I am confident that I have the skills and experience to meet your needs.\n
+    As a Full Stack Developer, I keep myself updated with the latest technologies and industry best practices. My background in computer technology has given me a deep understanding of programming, and my experience as a photographer has honed my skills in composition, visual language, and colorimetry. This combination of skills allows me to create better FrontEnd and UX.\n
+    I am also well-versed in Scrum and agile methodologies, and my strong communication skills make me an asset to any team. So, if you are building a team or already have one in place, I can seamlessly integrate and contribute to the team's success.\n
+    Don't hesitate to reach out to me. Let's work together and make amazing things happen!`,
   },
   experience: [
     {

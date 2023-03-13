@@ -32,63 +32,32 @@ const Contact = () => {
     );
   }, [email]);
   return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
+    <form ref={form} onSubmit={sendEmail}>
       <h2>Contact Me</h2>
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>chrisvill.2312@gmail.com</h5>
-            <a
-              href="mailto:chrisvill.2312@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsTelegram className="contact__option-icon" />
-            <h4>Telegram</h4>
-            <h5>@chrisvill23</h5>
-            <a
-              href="https://t.me/chrisvill23"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
-        </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-            onChange={controlledEmailHandler}
-          />
-          <input
-            type="text"
-            name="email"
-            placeholder="Your Email"
-            required
-            onChange={controlledEmailHandler}
-          />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            onChange={controlledEmailHandler}
-          ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Full Name"
+        required
+        onChange={controlledEmailHandler}
+      />
+      <input
+        type="text"
+        name="email"
+        placeholder="Your Email"
+        required
+        onChange={controlledEmailHandler}
+      />
+      <textarea
+        name="message"
+        rows="7"
+        placeholder="Your Message"
+        onChange={controlledEmailHandler}
+      ></textarea>
+      <button type="submit" className="btn btn-primary">
+        Send Message
+      </button>
+    </form>
   );
 };
 
