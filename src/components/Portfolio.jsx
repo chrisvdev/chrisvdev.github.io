@@ -4,6 +4,7 @@ import useModal from "../hooks/useModal.js";
 import ProjectCard from "./ProjectCard.jsx";
 import ModalProject from "./ModalProject.jsx";
 import Button from "./button/Button.jsx";
+import PortfolioBG from "./portfolioBG/PortfolioBG.jsx";
 
 export default function Portfolio() {
   const [viewFilterList, setViewFilterList] = useState(undefined);
@@ -32,6 +33,7 @@ export default function Portfolio() {
 
   return projectsReady ? (
     <div className="mt-20 flex flex-col items-center">
+      <PortfolioBG langs={langs} techs={technologies}/>
       <menu className="flex flex-wrap justify-center items-center mb-3 max-w-4xl">
         <p className="text-lg mr-1">
           This portfolio was generated dynamically getting the
@@ -60,7 +62,7 @@ export default function Portfolio() {
         <p className="text-lg"> By default the list is sorted to show the last project that I made first. </p>
       </menu>
       {viewFilterList && (
-        <div className="fixed top-0 left-0 flex flex-col justify-center items-center h-[100svh] w-[100svw] backdrop-blur">
+        <div className="fixed top-0 left-0 flex flex-col justify-center items-center h-[100svh] w-[100svw] backdrop-blur z-10">
           <article className="flex flex-col items-end bg-zinc-900 p-6 border border-amber-400 rounded ">
             <Button
               onClick={() => setViewFilterList(undefined)}
