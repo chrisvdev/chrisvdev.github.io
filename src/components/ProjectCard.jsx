@@ -1,6 +1,6 @@
 import React from 'react'
 import LinkButton from "./LinkButton.jsx";
-import Button from './Button.jsx';
+import Button from './button/Button.jsx';
 
 
 export default function ProjectCard({project , setModal}) {

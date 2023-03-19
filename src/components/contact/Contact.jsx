@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { MdOutlineEmail } from "react-icons/md";
-import { BsTelegram } from "react-icons/bs";
 import "./contact.css";
 import emailjs from "emailjs-com";
 import isEmail from "validator/es/lib/isEmail";

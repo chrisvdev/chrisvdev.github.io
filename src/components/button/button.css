@@ -1,0 +1,21 @@
+.button {
+  animation-name: button;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.button:hover {
+  animation-name: none;
+}
+
+@keyframes button {
+  30% {
+    border-bottom-color: transparent;
+  }
+  50% {
+    border-bottom-color: rgb(148 163 184);
+  }
+  70% {
+    border-bottom-color: transparent;
+  }
+}
