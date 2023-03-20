@@ -1,10 +1,10 @@
 ---
-const { id, className, minH } = Astro.props;
+const { id, className } = Astro.props;
 ---
 
 <section
   id={id}
-  class={`min-h-[${minH ? minH : "100svh"}] w-full snap-start ${className}`}
+  class={`min-h-[100svh] w-full snap-start ${className}`}
 >
   <slot />
 </section>

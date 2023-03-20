@@ -1,11 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Portfolio from "../components/Portfolio.jsx";
+import Container from "../components/Container.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <MainLayout>
-  <div class="grid place-content-center">
+  <Container className="grid place-content-center">
    <Portfolio client:load/>
-  </div>
+  </Container>
+  <Footer/>
 </MainLayout>
 

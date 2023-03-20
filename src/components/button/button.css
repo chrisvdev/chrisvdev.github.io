@@ -10,12 +10,12 @@
 
 @keyframes button {
   30% {
-    border-bottom-color: transparent;
+    border-color: transparent;
   }
   50% {
-    border-bottom-color: rgb(148 163 184);
+    border-color: #fbbf24;
   }
   70% {
-    border-bottom-color: transparent;
+    border-color: transparent;
   }
 }

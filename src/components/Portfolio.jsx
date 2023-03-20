@@ -32,12 +32,11 @@ export default function Portfolio() {
   console.log(projects);
 
   return projectsReady ? (
-    <div className="mt-20 flex flex-col items-center">
-      <PortfolioBG langs={langs} techs={technologies}/>
-      <menu className="flex flex-wrap justify-center items-center mb-3 max-w-4xl">
-        <p className="text-lg mr-1">
-          This portfolio was generated dynamically getting the
-        </p>
+    <div className="flex flex-col items-center mb-16">
+      <PortfolioBG langs={langs} techs={technologies} />
+      <menu className="flex flex-wrap justify-center items-center my-24 max-w-4xl">
+        <p className="text-lg mr-1">This portfolio was generated</p>
+        <p className="text-lg mr-1">dynamically getting the</p>
         <p className="text-lg mr-1">data from my Github account.</p>
         <p className="text-lg">You could filter this portfolio by</p>
         <Button
@@ -59,7 +58,8 @@ export default function Portfolio() {
         <Button onClick={() => setFilters(cleanFilters)} mark>
           Clean the filters.
         </Button>
-        <p className="text-lg"> By default the list is sorted to show the last project that I made first. </p>
+        <p className="text-lg mr-1"> By default the list is sorted to</p>
+        <p className="text-lg"> show the last project that I made first.</p>
       </menu>
       {viewFilterList && (
         <div className="fixed top-0 left-0 flex flex-col justify-center items-center h-[100svh] w-[100svw] backdrop-blur z-10">
@@ -99,7 +99,7 @@ export default function Portfolio() {
       </section>
     </div>
   ) : (
-    <h2 className="mt-[40svh] sm:text-base md:text-lg xl:text-xl 2xl:text-2xl ">
+    <h2 className="mt-[10svh] sm:text-base md:text-lg xl:text-xl 2xl:text-2xl ">
       Loading data from Github, please be patient...
     </h2>
   );
