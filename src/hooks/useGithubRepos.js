@@ -18,7 +18,7 @@ export default function useGithubRepos(userName = "chrisvill2312") {
                             langs: response.data,
                             name: clon.name,
                             description: clon.description,
-                            updated: clon.updated_at,
+                            updated: clon.created_at,
                             tags: clon.topics,
                             deploy: clon.homepage,
                             github: clon.html_url,

@@ -11,7 +11,7 @@ module.exports = {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
-			gridTemplateColumns:{
+			gridTemplateColumns: {
 				'13': 'repeat(13, minmax(0, 1fr))',
 				'14': 'repeat(14, minmax(0, 1fr))',
 				'15': 'repeat(15, minmax(0, 1fr))',
@@ -33,19 +33,11 @@ module.exports = {
 		},
 		screens: {
 			'sm': '300px',
-			// => @media (min-width: 640px) { ... }
-
 			'md': '640px',
-			// => @media (min-width: 768px) { ... }
-
 			'lg': '768px',
-			// => @media (min-width: 1024px) { ... }
-
 			'xl': '1024px',
-			// => @media (min-width: 1280px) { ... }
-
 			'2xl': '1280px',
-			// => @media (min-width: 1536px) { ... }
+			'dwarf': { 'raw': '(max-height: 780px)' }
 		}
 	},
 	plugins: [],

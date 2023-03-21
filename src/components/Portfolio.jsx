@@ -72,15 +72,15 @@ export default function Portfolio() {
               Close
             </Button>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 max-w-7xl m-auto gap-4 max-h-[70svh] overflow-y-auto">
-              {viewFilterList.list.map((lang) => (
-                <label key={lang} className="w-fit">
+              {viewFilterList.list.map((item) => (
+                <label key={item}>
                   <input
                     type="checkbox"
-                    name={lang}
-                    defaultChecked={filters.byLangs.includes(lang)}
+                    name={item}
+                    defaultChecked={filters.byLangs.includes(item)}
                     onChange={applyFilter(viewFilterList.filter)}
                   />{" "}
-                  {lang}
+                  {item.toUpperCase()}
                 </label>
               ))}
             </div>
