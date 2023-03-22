@@ -6,9 +6,8 @@ import Footer from "../components/Footer.astro";
 ---
 
 <MainLayout>
-  <Container className="grid place-content-center">
-   <Portfolio client:load/>
-  </Container>
-  <Footer/>
+  <section class="min-h-[100svh] w-full grid place-content-center">
+    <Portfolio client:load />
+  </section>
+  <Footer />
 </MainLayout>
-

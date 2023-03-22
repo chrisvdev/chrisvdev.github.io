@@ -1,10 +1,11 @@
 ---
 import LinkButton from "./LinkButton.astro";
 import NavigateButton from "./NavigateButton.astro";
+const { className = "" } = Astro.props;
 ---
 
 <section
-  class={`bg-zinc-800 min-h-[25svh] w-full snap-start flex flex-wrap justify-evenly items-center gap-12 p-8`}
+  class={`bg-zinc-800 min-h-[25svh] w-full flex flex-wrap justify-evenly items-center gap-12 p-8 ${className}`}
 >
   <article class="flex flex-col justify-center items-center">
     <h3 class="mb-1 font-semibold">Christian Villegas</h3>

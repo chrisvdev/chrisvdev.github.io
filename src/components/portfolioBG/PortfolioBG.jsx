@@ -2,7 +2,6 @@ import React from "react";
 import "./portfolioBG.css";
 
 export default function PortfolioBG({ langs, techs }) {
-  console.log(langs);
   const bgItems = [...langs, ...techs]
     .map((item) => item.toUpperCase())
     .sort(() => Math.ceil(Math.random() * 3) - 2);

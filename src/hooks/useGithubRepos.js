@@ -14,7 +14,7 @@ export default function useGithubRepos(userName = "chrisvill2312") {
                     const processing = response.data.map((e) => {
                         const clon = structuredClone(e);
                         return axios.get(clon.languages_url).then((response) => ({
-                            userName:userName,
+                            userName: userName,
                             langs: response.data,
                             name: clon.name,
                             description: clon.description,
@@ -22,7 +22,7 @@ export default function useGithubRepos(userName = "chrisvill2312") {
                             tags: clon.topics,
                             deploy: clon.homepage,
                             github: clon.html_url,
-                            preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/w_384,h_216,c_scale/v1/Landing/Projects/${clon.name}`,
+                            preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/w_384,h_216,c_scale/v1/Landing/Projects/${clon.name + (clon.name.includes('.') ? ".jpg" : "")}`,
                         }));
                     });
                     try {

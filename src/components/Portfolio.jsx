@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import useFilteredRepos from "../hooks/useFilteredRepos.js";
 import useModal from "../hooks/useModal.js";
 import ProjectCard from "./ProjectCard.jsx";
-import ModalProject from "./ModalProject.jsx";
+import ModalProject from "./ModalProject/ModalProject.jsx";
 import Button from "./button/Button.jsx";
 import PortfolioBG from "./portfolioBG/PortfolioBG.jsx";
 
@@ -11,7 +11,6 @@ export default function Portfolio() {
   const cleanFilters = { byLangs: [], byTech: [] };
   const [filters, setFilters] = useState(cleanFilters);
   const { modal, setModal, closeModal } = useModal();
-  useEffect(() => console.log(filters), [filters]);
   const { projects, projectsReady, langs, technologies } =
     useFilteredRepos(filters);
   const applyFilter = (filterType) => (e) => {
@@ -28,8 +27,6 @@ export default function Portfolio() {
         };
     });
   };
-
-  console.log(projects);
 
   return projectsReady ? (
     <div className="flex flex-col items-center mb-16">
@@ -71,7 +68,7 @@ export default function Portfolio() {
             >
               Close
             </Button>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 max-w-7xl m-auto gap-4 max-h-[70svh] overflow-y-auto">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 m-auto gap-4 max-h-[70svh] max-w-[50svw] overflow-y-auto">
               {viewFilterList.list.map((item) => (
                 <label key={item}>
                   <input
