@@ -4,11 +4,13 @@ import Header from "../components/Header.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
+import PortfolioPortal from "../components/PortfolioPortal";
 ---
 
 <MainLayout>  
   <Header/>
   <AboutMe/>
+  <PortfolioPortal client:load/>
   <Contact/>
   <Footer className="snap-start" />
 </MainLayout>

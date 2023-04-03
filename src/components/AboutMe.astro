@@ -7,12 +7,34 @@ import NavigateButton from "./NavigateButton.astro";
 <Container id="about" className="grid grid-cols-1 place-items-center">
   <article class="flex flex-col h-full w-fit">
     <div class="h-full grid sm:grid-cols-1 xl:grid-cols-2 place-items-center">
-      <div
-        class="flex sm:w-64 sm:h-64 md:w-96 md:h-96 overflow-hidden m-10 rounded shadow-md hover:shadow-lg shadow-amber-400 hover:shadow-zinc-300 rotate-6 hover:rotate-0 transition-all"
-      >
-        <img class="object-cover" src={content.about.me} alt="" />
+      <div>
+        <div class="flex -z-10 h-0">
+          <div
+            class="relative h-[12.73svh] w-[12.73svw] bg-teal-200 blur-3xl opacity-40"
+          >
+          </div>
+          <div
+            class="relative sm:top-[14rem] md:top-[22rem] sm:left-[14rem] md:left-[22rem] h-[12.73svh] w-[12.73svw] -translate-x-[calc(12.73svw_*_1)] bg-teal-500 blur-3xl opacity-40"
+          >
+          </div>
+        </div>
+        <div
+          class="flex sm:w-64 sm:h-64 md:w-96 md:h-96 overflow-hidden m-10 rounded shadow-md shadow-orange-400 hover:shadow-orange-300 rotate-6 hover:rotate-0 transition-all"
+        >
+          <img class="object-cover" src={content.about.me} alt="" />
+        </div>
       </div>
       <div class="m-10 h-full flex flex-col justify-center">
+        <div class="flex h-0">
+          <div
+            class="relative left-[100%] h-[19.09svh] w-[19.09svw] -translate-x-[calc(12.73svw_*_2)] bg-orange-400 blur-3xl opacity-25"
+          >
+          </div>
+          <div
+            class="relative top-[5rem] left-[75%] h-[19.09svh] w-[19.09svw] -translate-x-[calc(12.73svw_*_3)] bg-teal-600 blur-3xl opacity-25"
+          >
+          </div>
+        </div>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
           Hello, everyone! My name is Christian, and I am a Full Stack
           Developer.
@@ -30,7 +52,8 @@ import NavigateButton from "./NavigateButton.astro";
           My background in computer technology has given me a deep understanding
           of programming, and my experience as a photographer has honed my
           skills in composition, visual language, and colorimetry. This
-          combination of skills allows me to create better BackEnd, FrontEnd and UX.
+          combination of skills allows me to create better BackEnd, FrontEnd and
+          UX.
         </p>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
           I am also well-versed in Scrum and agile methodologies, and my strong
@@ -42,7 +65,7 @@ import NavigateButton from "./NavigateButton.astro";
           Don't hesitate to reach out to me. Let's work together and make
           amazing things happen!
         </p>
-        <p class="sm:text-lg 2xl:text-xl mb-5">
+        <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-5">
           See the projects that I've done and the technologies that I've used on
           my
           <NavigateButton id="/portfolio">Portfolio</NavigateButton>

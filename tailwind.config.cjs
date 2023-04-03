@@ -37,7 +37,8 @@ module.exports = {
 			'lg': '768px',
 			'xl': '1024px',
 			'2xl': '1280px',
-			'dwarf': { 'raw': '(max-height: 780px)' }
+			'dwarf': { 'raw': '(max-height: 780px)' },
+			'noMobile':{'min':'480px'}
 		}
 	},
 	plugins: [],
