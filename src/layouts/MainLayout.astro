@@ -11,7 +11,7 @@ import Nav from "../components/nav/Nav.astro";
     <link rel="stylesheet" href="https://use.typekit.net/yij4raz.css">
     <title>Christian's web site...</title>
   </head>
-  <body class="bg-zinc-900 text-zinc-300 font-futura-pt subpixel-antialiased scroll-smooth snap-y snap-mandatory">
+  <body class="bg-zinc-900 text-zinc-300 font-futura-pt subpixel-antialiased scroll-smooth noMobile:snap-y noMobile:snap-mandatory">
     <Nav/>
     <slot/>
   </body>
@@ -21,5 +21,10 @@ import Nav from "../components/nav/Nav.astro";
   *{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+  }
+  @media (max-width: 480px){
+    *{
+      scroll-snap-type: none;
+    }
   }
 </style>
