@@ -4,10 +4,32 @@ import LinkButton from "./LinkButton.astro";
 ---
 
 <Container id="contact" className="flex flex-col justify-center items-center">
-  <h2 class="mb-4 font-medium text-2xl text-center mt-20">You can contact me through the following ways</h2>
-  <div class="flex sm:flex-col md:flex-col lg:flex-row flex-wrap gap-8 justify-center items-center">
+  <div class="flex -z-10 h-0">
+    <div
+      class="relative left-10 top-32 h-[61.8svh] lg:h-[12.73svh] w-[12.73svw] bg-orange-700 blur-3xl opacity-40"
+    >
+    </div>
+    <div
+      class="relative left-8 top-32 h-[61.8svh] lg:h-[12.73svh] w-[12.73svw] bg-orange-500 blur-3xl opacity-40"
+    >
+    </div>
+    <div
+      class="relative right-8 top-32 h-[61.8svh] lg:h-[12.73svh] w-[12.73svw] bg-teal-500 blur-3xl opacity-40"
+    >
+    </div>
+    <div
+      class="relative right-10 top-32 h-[61.8svh] lg:h-[12.73svh] w-[12.73svw] bg-teal-700 blur-3xl opacity-40"
+    >
+    </div>
+  </div>
+  <h2 class="mb-4 font-medium text-2xl text-center mt-20">
+    You can contact me through the following ways
+  </h2>
+  <div
+    class="flex sm:flex-col md:flex-col lg:flex-row flex-wrap gap-8 justify-center items-center"
+  >
     <article
-      class="flex flex-col items-center border border-amber-400 hover:border-slate-50 rounded my-4 p-6 transition-all "
+      class="flex flex-col items-center border border-amber-400 hover:border-slate-50 rounded my-4 p-6 transition-all"
     >
       <div
         class="flex items-center justify-around content-center h-fit w-fit mb-2"
