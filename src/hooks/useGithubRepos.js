@@ -6,6 +6,7 @@ const filterProjects = (repos) =>
 
 export default function useGithubRepos(userName = "chrisvill2312") {
     const [projects, setProjects] = useState([]);
+    const [externalProjects, setExternalProjects] = useState([]);
     useEffect(() => {
         if (projects.length === 0) {
             axios
@@ -22,7 +23,8 @@ export default function useGithubRepos(userName = "chrisvill2312") {
                             tags: clon.topics,
                             deploy: clon.homepage,
                             github: clon.html_url,
-                            preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/w_384,h_216,c_scale/v1/Landing/Projects/${clon.name + (clon.name.includes('.') ? ".jpg" : "")}`,
+                            preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/w_384,h_216,c_scale/v1/Landing/Projects/${clon.name + (clon.name.includes(".") ? ".jpg" : "")
+                                }`,
                         }));
                     });
                     try {
@@ -38,6 +40,20 @@ export default function useGithubRepos(userName = "chrisvill2312") {
                 });
         }
     }, [projects]);
-    const updateProjects = () => (setProjects([]))
-    return [projects, updateProjects];
+    useEffect(() => {
+        if (externalProjects.length === 0) {
+            axios
+                .get(`https://raw.githubusercontent.com/chrisvill2312/chrisvill2312.github.io/Content/content.json`)
+                .then((response) => {
+                    setExternalProjects(response.data)
+                })
+                .catch(() => (setExternalProjects([])));
+        }
+    }, [externalProjects]);
+
+    const updateProjects = () => setProjects([]);
+
+    return [[...projects, ...externalProjects], updateProjects];
 }
+
+// https://raw.githubusercontent.com/chrisvill2312/chrisvill2312.github.io/Content/content.json
