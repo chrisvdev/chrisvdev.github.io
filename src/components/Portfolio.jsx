@@ -84,7 +84,7 @@ export default function Portfolio() {
           </article>
         </div>
       )}
-      <section className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 max-w-7xl m-auto gap-4">
+      <section className="flex flex-col">
         {projects.map((project, index) => (
           <ProjectCard
             setModal={setModal}
