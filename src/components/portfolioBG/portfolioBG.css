@@ -22,7 +22,6 @@
 .bgA2 {
   animation-name: bgA2;
   animation-duration: 8s;
-  animation-delay: 7s;
   animation-iteration-count: infinite;
 }
 
