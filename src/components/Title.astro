@@ -1,6 +1,4 @@
 ---
-import content from "../content";
-const { name, profession, cv } = content.header;
 const SVGSize = 24;
 ---
 
@@ -8,7 +6,7 @@ const SVGSize = 24;
   <h1
     class="text-center text-6xl sm:text-4xl md:text-6xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-amber-100 to-amber-500 py-2"
   >
-    {name}
+    Christian Villegas
   </h1>
   <div class="flex flex-row justify-center items-center sm:mb-2 md:mb-3">
     <div
@@ -18,7 +16,7 @@ const SVGSize = 24;
     <h2
       class="text-center sm:text-base md:text-xl font-medium text-transparent bg-clip-text bg-gradient-to-b from-amber-400 to-amber-700"
     >
-      {profession}
+      FULL STACK DEVELOPER
     </h2>
     <div
       class="border border-amber-600 h-[2px] w-[var(--barSize)] mx-2 barAnimation"
@@ -67,7 +65,7 @@ const SVGSize = 24;
       </svg>
     </a>
     <a
-      href={cv}
+      href="/CV-English.pdf"
       target="_blank"
       rel="noopener noreferrer"
       class="flex place-content-center place-items-center ml-8"

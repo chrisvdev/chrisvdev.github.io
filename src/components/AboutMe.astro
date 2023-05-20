@@ -1,6 +1,5 @@
 ---
 import Container from "./Container.astro";
-import content from "../content";
 import LinkButton from "./LinkButton.astro";
 ---
 
@@ -21,7 +20,11 @@ import LinkButton from "./LinkButton.astro";
         <div
           class="flex sm:w-64 sm:h-64 md:w-96 md:h-96 overflow-hidden m-10 rounded shadow-md shadow-orange-400 hover:shadow-orange-300 rotate-6 hover:rotate-0 transition-all"
         >
-          <img class="object-cover" src={content.about.me} alt="" />
+          <img
+            class="object-cover"
+            src="https://res.cloudinary.com/dgg07ocbn/image/upload/fl_awebp/w_480,h_480,c_fill/v1674355663/Landing/me_mjun2q.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="m-10 h-full flex flex-col justify-center">

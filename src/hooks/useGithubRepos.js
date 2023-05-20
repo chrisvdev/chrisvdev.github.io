@@ -23,7 +23,7 @@ export default function useGithubRepos(userName = "chrisvill2312") {
                             tags: clon.topics,
                             deploy: clon.homepage,
                             github: clon.html_url,
-                            preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/w_384,h_216,c_scale/v1/Landing/Projects/${clon.name + (clon.name.includes(".") ? ".jpg" : "")
+                            preview: `https://res.cloudinary.com/dgg07ocbn/image/upload/fl_awebp/w_384,h_216,c_scale/v1/Landing/Projects/${clon.name + (clon.name.includes(".") ? ".jpg" : "")
                                 }`,
                         }));
                     });
