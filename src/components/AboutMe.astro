@@ -1,14 +1,14 @@
 ---
 import Container from "./Container.astro";
 import content from "../content";
-import NavigateButton from "./NavigateButton.astro";
+import LinkButton from "./LinkButton.astro";
 ---
 
 <Container id="about" className="grid grid-cols-1 place-items-center">
   <article class="flex flex-col h-full w-fit">
     <div class="h-full grid sm:grid-cols-1 xl:grid-cols-2 place-items-center">
       <div>
-        <div class="flex -z-10 h-0">
+        <div class="flex h-0">
           <div
             class="relative h-[12.73svh] w-[12.73svw] bg-teal-200 blur-3xl opacity-40"
           >
@@ -25,7 +25,7 @@ import NavigateButton from "./NavigateButton.astro";
         </div>
       </div>
       <div class="m-10 h-full flex flex-col justify-center">
-        <div class="flex h-0">
+        <div class="flex -z-10 h-0">
           <div
             class="relative left-[100%] h-[19.09svh] w-[19.09svw] -translate-x-[calc(12.73svw_*_2)] bg-orange-400 blur-3xl opacity-25"
           >
@@ -36,41 +36,37 @@ import NavigateButton from "./NavigateButton.astro";
           </div>
         </div>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
-          Hello, everyone! My name is Christian, and I am a Full Stack
-          Developer.
+          I am a Full Stack Web Developer specializing in the development of
+          applications using JavaScript, TypeScript, React, Node, and both
+          relational databases like PostgreSQL and non-relational databases like
+          MongoDB.
         </p>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
-          If you are looking for someone who can provide effective solutions,
-          then you have come to the right place! I am confident that I have the
-          skills and experience to meet your needs.
+          I am deeply passionate about technology. I enjoy continually expanding
+          my stack by incorporating new tools to build better solutions and
+          honing my soft skills such as communication, active listening, etc.,
+          in order to enhance my teamwork beyond the knowledge provided by agile
+          methodologies.
         </p>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
-          As a Full Stack Developer, I keep myself updated with the latest
-          technologies and industry best practices.
+          knowledge provided by agile methodologies. In my future endeavors, I
+          plan to delve into areas of interest such as Machine Learning, CI/CD,
+          Cloud, etc.
         </p>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
-          My background in computer technology has given me a deep understanding
-          of programming, and my experience as a photographer has honed my
-          skills in composition, visual language, and colorimetry. This
-          combination of skills allows me to create better BackEnd, FrontEnd and
-          UX.
+          I host my own Twitch channel at <LinkButton
+            href="https://twitch.tv/chrisvdev"
+            className="px-0"
+          >
+            twitch.tv/chrisvdev
+          </LinkButton>, where viewers can see me working on projects alongside
+          the community.
         </p>
         <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-2">
-          I am also well-versed in Scrum and agile methodologies, and my strong
-          communication skills make me an asset to any team. So, if you are
-          building a team or already have one in place, I can seamlessly
-          integrate and contribute to the team's success.
-        </p>
-        <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-5">
-          Don't hesitate to reach out to me. Let's work together and make
-          amazing things happen!
-        </p>
-        <p class="dwarf:text-base sm:text-lg 2xl:text-xl mb-5">
-          See the projects that I've done and the technologies that I've used on
-          my
-          <NavigateButton id="/portfolio">Portfolio</NavigateButton>
-          and
-          <NavigateButton id="#contact">Contact me</NavigateButton>
+          As an IT professional, I also possess a solid understanding of and can
+          develop infrastructures that support applications. Additionally, as a
+          hobbyist photographer, I strive to comprehend how to create improved
+          UI/UX experiences.
         </p>
       </div>
     </div>
