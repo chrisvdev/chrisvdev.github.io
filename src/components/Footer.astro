@@ -8,7 +8,7 @@ const { className = "" } = Astro.props;
   class={`bg-zinc-800 min-h-[25svh] w-full flex flex-wrap justify-evenly items-center gap-12 p-8 ${className}`}
 >
   <article class="flex flex-col justify-center items-center">
-    <h3 class="mb-1 font-semibold">Christian Villegas</h3>
+    <a href="#" class="mb-1 font-semibold">Christian Villegas</a>
     <h4 class="mb-1 text-sm text-center">Full stack developer</h4>
     <a
       href="https://twitch.com/chrisvdev"
@@ -79,22 +79,5 @@ const { className = "" } = Astro.props;
       >
       <p class="ml-2 text-sm">/chrisvill2312</p>
     </a>
-  </article>
-  <article
-    class="flex flex-col justify-center items-center border-l border-zinc-600"
-  >
-    <h3 class="font-semibold mb-2">Page index</h3>
-    <NavigateButton className="text-base ml-4 mb-1" id="/#">
-      Home
-    </NavigateButton>
-    <NavigateButton className="text-base ml-4 mb-1" id="/#about">
-      About me
-    </NavigateButton>
-    <NavigateButton className="text-base ml-4 mb-1" id="/portfolio">
-      Portfolio
-    </NavigateButton>
-    <NavigateButton className="text-base ml-4 mb-1" id="/#contact">
-      Contact
-    </NavigateButton>
   </article>
 </section>
