@@ -80,7 +80,7 @@ export default function Portfolio() {
               />
             </g>
           </svg>
-          <label className="ml-2">Technologies and more.</label>
+          <label className="ml-2">Technologies and more</label>
         </Button>
 
         <Button
@@ -105,7 +105,7 @@ export default function Portfolio() {
               />
             </g>
           </svg>
-          <label className="ml-2">Clean the filters.</label>
+          <label className="ml-2">Clean the filters</label>
         </Button>
       </menu>
       {viewFilterList && (

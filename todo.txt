@@ -1,0 +1,10 @@
+imágenes a WebP ✅
+agregar Linkedin a contactos ✅
+Sacar indice de footer, link a home✅
+ChrisVDev en footer✅
+puntos en filtros✅
+Sacar scale ✅
+mejorar botones
+Sacar animación en el menu sobre portfolio
+en modales bloquear scroll, div con blur con evento click -> close
+arreglar para grandes pantallas
