@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  outDir: 'docs', // For deploy on GHPages
   vite: {
     build: {
       rollupOptions: {
