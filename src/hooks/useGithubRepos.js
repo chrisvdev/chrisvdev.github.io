@@ -4,7 +4,7 @@ import axios from "axios";
 const filterProjects = (repos) =>
     repos.filter((repo) => repo.tags.includes("portfolio"));
 
-export default function useGithubRepos(userName = "chrisvill2312") {
+export default function useGithubRepos (userName = "chrisvdev") {
     const [projects, setProjects] = useState([]);
     const [externalProjects, setExternalProjects] = useState([]);
     useEffect(() => {

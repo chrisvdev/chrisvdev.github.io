@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import MarkdownIt from "markdown-it";
 
-export default function useModal() {
-    const md = new MarkdownIt(); //Gracias ManzDev por la Libreria y por estar!
+export default function useModal () {
+    const md = new MarkdownIt(); //Gracias ManzDev por la Librería y por estar!
     const [project, _setProject] = useState(undefined)
     const [modal, _setModal] = useState(undefined)
     const setModal = (project) => (_setProject(project))

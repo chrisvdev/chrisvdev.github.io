@@ -286,7 +286,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 const filterProjects = (repos) =>
     repos.filter((repo) => repo.tags.includes("portfolio"));
 
-function useGithubRepos(userName = "chrisvill2312") {
+function useGithubRepos (userName = "chrisvdev") {
     const [projects, setProjects] = useState([]);
     const [externalProjects, setExternalProjects] = useState([]);
     useEffect(() => {
@@ -448,8 +448,8 @@ const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   url: $$url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-function useModal() {
-    const md = new MarkdownIt(); //Gracias ManzDev por la Libreria y por estar!
+function useModal () {
+    const md = new MarkdownIt(); //Gracias ManzDev por la Librería y por estar!
     const [project, _setProject] = useState(undefined);
     const [modal, _setModal] = useState(undefined);
     const setModal = (project) => (_setProject(project));
