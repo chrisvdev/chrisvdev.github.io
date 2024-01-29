@@ -1,5 +1,5 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, e as renderComponent, m as maybeRenderHead } from './chunk.4e26b078.js';
-import { u as useFilteredRepos, P as PortfolioBG, $ as $$Footer, a as $$MainLayout } from './chunk.440c852b.js';
+import { u as useFilteredRepos, P as PortfolioBG, $ as $$Footer, a as $$MainLayout } from './chunk.dc0b499b.js';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -245,10 +245,10 @@ const $$Astro = createAstro();
 const $$Portfolio = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Portfolio;
-  return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": ($$result2) => renderTemplate`${maybeRenderHead()}<section class="min-h-[100svh] w-full grid place-content-center">${renderComponent($$result2, "Portfolio", Portfolio, { "client:load": true, "client:component-hydration": "load", "client:component-path": "D:/Documents/Proyectos/chrisvill2312.github.io/src/components/Portfolio.jsx", "client:component-export": "default" })}</section>${renderComponent($$result2, "Footer", $$Footer, {})}` })}`;
-}, "D:/Documents/Proyectos/chrisvill2312.github.io/src/pages/portfolio.astro", void 0);
+  return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": ($$result2) => renderTemplate`${maybeRenderHead()}<section class="min-h-[100svh] w-full grid place-content-center">${renderComponent($$result2, "Portfolio", Portfolio, { "client:load": true, "client:component-hydration": "load", "client:component-path": "D:/Documents/Proyectos/chrisvdev.github.io/src/components/Portfolio.jsx", "client:component-export": "default" })}</section>${renderComponent($$result2, "Footer", $$Footer, {})}` })}`;
+}, "D:/Documents/Proyectos/chrisvdev.github.io/src/pages/portfolio.astro", void 0);
 
-const $$file = "D:/Documents/Proyectos/chrisvill2312.github.io/src/pages/portfolio.astro";
+const $$file = "D:/Documents/Proyectos/chrisvdev.github.io/src/pages/portfolio.astro";
 const $$url = "/portfolio";
 
 export { $$Portfolio as default, $$file as file, $$url as url };
