@@ -1,21 +1,8 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
-import react from "@astrojs/react";
-
-import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: 'docs', // For deploy on GHPages
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          entryFileNames: 'entry.[hash].js',
-          chunkFileNames: 'chunks/chunk.[hash].js',
-          assetFileNames: 'assets/asset.[hash][extname]',
-        },
-      },
-    },
-  },
-  integrations: [react(), tailwind()]
+  site: 'https://chrisvdev.github.io',
+  base: '/',
 });
